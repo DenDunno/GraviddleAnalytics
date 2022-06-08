@@ -1,9 +1,15 @@
-﻿
+﻿using System.Text;
+using System.Text.Json;
+
 var graviddleClient = new Client("127.0.0.1", 8080);
 
 while (true)
 {
-    graviddleClient.Send("нюхай бебру" + " " + DateTime.Now);
-    Console.WriteLine(DateTime.Now);
-    await Task.Delay(1000);
+    string message = Console.ReadLine()!;
+    
+    var command = new Command(message);
+    string json = JsonSerializer.Serialize(command);
+    byte[] data = Encoding.Unicode.GetBytes(json);
+    
+    graviddleClient.Send(data);
 }

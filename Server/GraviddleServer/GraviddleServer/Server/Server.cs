@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Net.Sockets;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Text.Json;
 
 public class Server
 {
@@ -10,7 +10,7 @@ public class Server
     private readonly Socket _listenSocket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
     private readonly byte[] _buffer = new byte[256];
     private readonly StringBuilder _stringBuilder = new();
-    private BinaryFormatter _binaryFormatter = new();
+    private readonly Logger _logger = new();
     
     public Server(string address, int port, IServerRouter serverRouter)
     {
@@ -30,7 +30,7 @@ public class Server
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception.Message);
+                _logger.LogError(exception.Message);
             }
         }
     }
@@ -39,7 +39,7 @@ public class Server
     {
         _listenSocket.Bind(_endPoint);
         _listenSocket.Listen();
-        Console.WriteLine("Start listening");
+        _logger.LogSuccess("Start listening");
     }
 
     private void AcceptConnection()
@@ -53,8 +53,11 @@ public class Server
             _stringBuilder.Append(Encoding.Unicode.GetString(_buffer, 0, bytes));
         } while (connectionWithClient.Available > 0);
 
-        Console.WriteLine(_stringBuilder);
-        //_serverRouter.Route(_stringBuilder);
+        var json = _stringBuilder.ToString();
+        var command = JsonSerializer.Deserialize<Command>(json)!;
+        
+        _serverRouter.Route(command);
+        _logger.Log(command.Data + " " + command.Type);
 
         connectionWithClient.Shutdown(SocketShutdown.Both);
         connectionWithClient.Close();
