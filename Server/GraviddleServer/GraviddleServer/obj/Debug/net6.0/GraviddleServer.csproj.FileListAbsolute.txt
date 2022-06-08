@@ -1,0 +1,15 @@
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\bin\Debug\net6.0\GraviddleServer.exe
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\bin\Debug\net6.0\GraviddleServer.deps.json
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\bin\Debug\net6.0\GraviddleServer.runtimeconfig.json
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\bin\Debug\net6.0\GraviddleServer.dll
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\bin\Debug\net6.0\GraviddleServer.pdb
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.csproj.AssemblyReference.cache
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.AssemblyInfoInputs.cache
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.AssemblyInfo.cs
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.csproj.CoreCompileInputs.cache
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.dll
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\refint\GraviddleServer.dll
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.pdb
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\GraviddleServer.genruntimeconfig.cache
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Server\GraviddleServer\GraviddleServer\obj\Debug\net6.0\ref\GraviddleServer.dll
