@@ -3,7 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 
-public class Server
+public class SocketServer
 {
     private readonly IServerRouter _serverRouter;
     private readonly IPEndPoint _endPoint; 
@@ -12,7 +12,7 @@ public class Server
     private readonly StringBuilder _stringBuilder = new();
     private readonly Logger _logger = new();
     
-    public Server(string address, int port, IServerRouter serverRouter)
+    public SocketServer(string address, int port, IServerRouter serverRouter)
     {
         _serverRouter = serverRouter;
         _endPoint = new IPEndPoint(IPAddress.Parse(address), port);
@@ -54,10 +54,10 @@ public class Server
         } while (connectionWithClient.Available > 0);
 
         var json = _stringBuilder.ToString();
-        var command = JsonSerializer.Deserialize<Command>(json)!;
+        _logger.Log(json + "\n");
         
+        var command = JsonSerializer.Deserialize<CommandData>(json)!;
         _serverRouter.Route(command);
-        _logger.Log(command.Data + " " + command.Type);
 
         connectionWithClient.Shutdown(SocketShutdown.Both);
         connectionWithClient.Close();

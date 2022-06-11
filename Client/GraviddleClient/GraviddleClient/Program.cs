@@ -1,15 +1,18 @@
-﻿using System.Text;
-using System.Text.Json;
+﻿using GraviddleSocketClient;
 
-var graviddleClient = new Client("127.0.0.1", 8080);
+var graviddleClient = new GraviddleClient();
+var dataForAnalytics = new DataForAnalytics()
+{
+    DeviceId = "ID",
+    Name = "Hanna",
+    Age = 30,
+    Level = 2,
+    TimeForLevel = 10f,
+    Stars = 2
+};
 
 while (true)
 {
-    string message = Console.ReadLine()!;
-    
-    var command = new Command(message);
-    string json = JsonSerializer.Serialize(command);
-    byte[] data = Encoding.Unicode.GetBytes(json);
-    
-    graviddleClient.Send(data);
+    dataForAnalytics.Name = Console.ReadLine()!;
+    graviddleClient.SendDataForAnalytics(dataForAnalytics);
 }

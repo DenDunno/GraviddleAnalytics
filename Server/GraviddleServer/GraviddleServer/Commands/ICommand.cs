@@ -1,5 +1,5 @@
 ﻿
-public interface ICommandHandler
+public interface ICommand
 {
     void Execute(string json);
 }

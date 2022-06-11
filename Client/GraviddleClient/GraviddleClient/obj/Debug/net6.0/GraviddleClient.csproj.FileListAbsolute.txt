@@ -13,3 +13,5 @@ D:\Business\GraviddleAnalytics\GraviddleAnalytics\Client\GraviddleClient\Gravidd
 D:\Business\GraviddleAnalytics\GraviddleAnalytics\Client\GraviddleClient\GraviddleClient\obj\Debug\net6.0\GraviddleClient.pdb
 D:\Business\GraviddleAnalytics\GraviddleAnalytics\Client\GraviddleClient\GraviddleClient\obj\Debug\net6.0\GraviddleClient.genruntimeconfig.cache
 D:\Business\GraviddleAnalytics\GraviddleAnalytics\Client\GraviddleClient\GraviddleClient\obj\Debug\net6.0\ref\GraviddleClient.dll
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Client\GraviddleClient\GraviddleClient\obj\Debug\net6.0\GraviddleClient.csproj.CopyComplete
+D:\Business\GraviddleAnalytics\GraviddleAnalytics\Client\GraviddleClient\GraviddleClient\bin\Debug\net6.0\Newtonsoft.Json.dll

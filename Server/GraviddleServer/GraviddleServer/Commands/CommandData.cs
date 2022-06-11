@@ -5,7 +5,7 @@ public enum CommandType
     GetStatistics = 1
 }
 
-public class Command
+public class CommandData
 {
     public CommandType Type { get; set; }
     public string Data { get; set; } = null!;

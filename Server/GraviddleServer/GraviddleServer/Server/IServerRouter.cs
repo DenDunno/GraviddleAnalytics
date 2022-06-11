@@ -1,5 +1,5 @@
 ﻿
 public interface IServerRouter
 {
-    void Route(Command command);
+    void Route(CommandData commandData);
 }

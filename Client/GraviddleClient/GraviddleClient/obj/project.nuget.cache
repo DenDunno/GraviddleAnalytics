@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VUT3zVdb9xwEDpnHDJb+ZL7x1DQ8TeyvrOUTRRWl+dlPxKGwTx8QPslM9SYKQsbf3WGyuENzaK680yuXVVl+bw==",
+  "dgSpecHash": "HSdfzLnJwSqCbb/PTjoOHOKw1WeaNQNMGkrmmdG9pfvCsykWuweaqZeBQvzkt0OwY5eSCUlCkpBTUudjP/fHaw==",
   "success": true,
   "projectFilePath": "D:\\Business\\GraviddleAnalytics\\GraviddleAnalytics\\Client\\GraviddleClient\\GraviddleClient\\GraviddleClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dunno\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
